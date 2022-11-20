@@ -1,9 +1,42 @@
-.cards-containers {
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 44px;
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 12px 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
   display: flex;
   justify-content: space-between;
 }
 
-.card {
+.card-container--padding {
+  padding: 17px;
+}
+
+.card-container {
   position: relative;
   width: 300px;
   height: 450px;
@@ -33,6 +66,12 @@
 .arrow__img {
   content: url("data:image/svg+xml;charset=utf-8,%3Csvg width='13' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.53 6.53a.75.75 0 0 0 0-1.06L7.757.697a.75.75 0 1 0-1.06 1.06L10.939 6l-4.242 4.243a.75.75 0 0 0 1.06 1.06L12.53 6.53ZM0 6.75h12v-1.5H0v1.5Z' fill='%23171717'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
+}
+
+.card-btn__resources {
+  background-color: rgb(249, 226, 104);
+  padding: 18px 19px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

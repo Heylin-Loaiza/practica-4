@@ -5,66 +5,69 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>Featured Resources</title>
 </head>
 <body>
   <div>
     <h1>Featured Resources</h1>
-    <ul class="cards-containers">
+    <ul class="card">
       <li>
-        <div class="card">
+        <div class="card-container">
           <img class="card__img" src="./images/card.webp" alt="">
-          <div>
+          <div class="card-container--padding">
             <p>LIVE WEBINAR</p>
             <h2>Cloud Attacks Are Here: Threat Actors Like Containers Too!</h2>
-            <p><time datetime="2022-11-17T10:00">Nov 17, 2022 10am</time>Pacific<span>|</span><time datetime="13:00">1pm</time>Eastern</p>
+            <p><time datetime="2022-11-17T10:00">Nov 17, 2022 10am</time> Pacific<span>  | </span><time datetime="13:00">1pm</time> Eastern</p>
           </div>
-          <div>
+          <div class="card-container--padding">
             <a class="card__button" href="#">Register Now<div class="arrow__img"></div></a>
           </div>
         </div>
       </li>
 
-      <li class="card">
-        <div class="card">
+      <li>
+        <div class="card-container">
           <img class="card__img" src="./images/card.webp" alt="">
-          <div>
+          <div class="card-container--padding">
             <p>BLOG</p>
             <h2>Eliminate noise and prioritize the vulnerabilities that really matter with Risk Spotlight</h2>
           </div>
-          <div>
+          <div class="card-container--padding">
             <a class="card__button" href="#">Read the Blog<div class="arrow__img"></div></a>
           </div>
         </div>
       </li>
 
       <li>
-        <div class="card">
+        <div class="card-container">
           <img class="card__img" src="./images/card.webp" alt="">
-          <div>
+          <div class="card-container--padding">
             <p>BRIEF</p>
             <h2>Sysdig Awarded Container Security Company of the Year</h2>
           </div>
-          <div>
+          <div class="card-container--padding">
             <a class="card__button" href="#">Read the Brief<div class="arrow__img"></div></a>
           </div>
         </div>
       </li>
 
       <li>
-        <div class="card">
+        <div class="card-container">
           <img class="card__img" src="./images/card.webp" alt="">
-          <div>
+          <div class="card-container--padding">
             <p>REPORT</p>
             <h2>2022 Cloud-Native Security and Usage Report</h2>
           </div>
-          <div>
+          <div class="card-container--padding">
             <a class="card__button" href="#">Learn More<div class="arrow__img"></div></a>
           </div>
         </div>
       </li>
     </ul>
-    <a href="">VIEW ALL RESOURCES</a>
+    <a href="#" class="card-btn__resources">VIEW ALL RESOURCES</a>
   </div>
 </body>
 </html>

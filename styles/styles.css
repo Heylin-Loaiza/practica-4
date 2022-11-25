@@ -57,6 +57,8 @@ a {
 .card__button {
   display: none;
   cursor: pointer;
+  position: absolute;
+  bottom: 20px;
 }
 
 .card:hover .card__button {

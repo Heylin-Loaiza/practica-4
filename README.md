@@ -1,1 +1,2 @@
-# practica-4
+Integrantes:
+Heylin Loaiza y Jason Aguilar.

@@ -23,6 +23,7 @@ h2 {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 a {
@@ -34,6 +35,7 @@ a {
   display: flex;
   justify-content: space-between;
   overflow-x: scroll;
+  margin: 50px;
 }
 
 .card-container--padding {
@@ -46,14 +48,24 @@ a {
   height: 440px;
   border-radius: 0 0 10px 10px;
   box-shadow: 10px 10px 10px rgb(224, 224, 224);
-  background: linear-gradient(to top left, white 50%, #ffe24d 50%) bottom right;
-  background-size: 300%;
-  transition: 0.5s ease;
   margin-bottom: 50px;
+  overflow: hidden;
 }
 
-.card-container:hover {
-  background-position: left;
+.card-container:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #ffe24d;
+  height: 50px;
+  width: 32px;
+  border-radius: 40px;
+  transform-origin: 50% 50%;
+  transition: transform 0.5s ease-out;
+}
+
+.card-container:hover:before {
+  transform: scale(21);
 }
 
 .card__button {
@@ -63,7 +75,7 @@ a {
   bottom: 20px;
 }
 
-.card:hover .card__button {
+.card-container:hover .card__button {
   display: flex;
 }
 
@@ -125,12 +137,16 @@ a {
   }
   .card__img {
     width: 100%;
+    height: 125px;
   }
   .card__button--text {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .card-btn__resources {
+    font-size: 12px;
   }
 }
-@media (min-width: 820px) and (max-width: 1400px) {
+@media (min-width: 821px) and (max-width: 1400px) {
   .card {
     gap: 3.5%;
   }
@@ -138,6 +154,30 @@ a {
 @media (min-width: 1400px) {
   .card {
     gap: 3%;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 24px;
+  }
+  .card-container {
+    width: 383px;
+    height: 567px;
+  }
+  .card-container:before {
+    height: 70px;
+    width: 40px;
+  }
+  .card__img {
+    width: 100%;
+    height: 200px;
+  }
+  .card__button--text {
+    font-size: 24px;
+  }
+  .card-btn__resources {
+    font-size: 26px;
   }
 }
 
